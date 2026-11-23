@@ -64,19 +64,6 @@ func _select(id: String) -> void:
 func _draw() -> void:
 	if run == null:
 		return
-	draw_rect(Rect2(0,0,638,HEIGHT),Color("#b5a17e"))
-	for x in range(0,638,4):
-		var edge := minf(float(x),638.0-x)
-		if edge < 34:
-			draw_rect(Rect2(x,0,4,HEIGHT),Color(0.22,0.11,0.10,(34-edge)*0.009))
-	for x in [10,16,621,627]:
-		draw_line(Vector2(x,0),Vector2(x,HEIGHT),Color("#6f543d74"),1)
-	var rng := RandomNumberGenerator.new()
-	rng.seed = 773
-	for i in range(3900):
-		var x := rng.randi_range(19,617)
-		var y := rng.randi_range(0,HEIGHT)
-		draw_rect(Rect2(x,y,rng.randi_range(1,7),1),Color("#5e453637") if i%3 == 0 else Color("#f2d7a239"))
 	for row in range(HEIGHT-65,-1,-STEP):
 		draw_line(Vector2(32,row),Vector2(606,row),Color("#725f4c31"),1)
 		var depth := (HEIGHT - 65 - row) / STEP

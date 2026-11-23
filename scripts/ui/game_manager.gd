@@ -33,6 +33,7 @@ var save_path := Save.PATH
 var save_error := false
 
 func _ready() -> void:
+	UI.ThemeArt.prepare()
 	texture_filter = TEXTURE_FILTER_LINEAR
 	var ui_theme := Theme.new()
 	ui_theme.default_font = UI.font("body")
@@ -68,7 +69,7 @@ func _screen(name: String, mode: String) -> void:
 		_header(name)
 
 func _header(title: String) -> void:
-	UI.panel(screen,0,0,1280,79,Color("#10141e"),Color("#4a3e37"))
+	UI.frame(screen,22,6,1236,68)
 	var identity := Icon.new()
 	identity.kind = "gate"
 	identity.mouse_filter = MOUSE_FILTER_IGNORE
@@ -94,8 +95,10 @@ func _footer(left: String, right: String) -> void:
 func _show_title() -> void:
 	run = Save.load_run(save_path)
 	_screen("title","title")
-	UI.rule(screen,72,86,55,2,UI.GOLD)
-	UI.label(screen,"远征档案   /   第一纪",145,72,395,32,15,UI.GOLD)
+	UI.frame(screen,32,60,617,579,UI.ThemeArt.wood)
+	UI.frame(screen,50,81,581,530)
+	UI.frame(screen,67,100,244,33,UI.ThemeArt.ribbon)
+	UI.label(screen,"远征档案   /   第一纪",67,99,244,31,15,UI.PALE,"body",HORIZONTAL_ALIGNMENT_CENTER)
 	UI.label(screen,"Abyss",66,143,660,112,96,UI.PALE,"display")
 	UI.label(screen,"Expedition",67,240,665,103,84,UI.PALE,"display")
 	UI.label(screen,"深 渊 远 征",74,348,590,35,23,UI.GOLD)
@@ -106,9 +109,8 @@ func _show_title() -> void:
 	UI.button(screen,"设置",74,540,119,39,_settings)
 	UI.button(screen,"退出",203,540,119,39,func(): get_tree().quit())
 	var warrior := Content.definition("heroes","warrior")
-	UI.unit_sprite(screen,warrior.sprite,837,608,Vector2(154,146),Color("#c8cfdf"))
-	UI.sprite(screen,"Scenery_16",781,607,1.05,Color("#e3ba89"))
-	UI.sprite(screen,"Scenery_20",1176,614,1.1,Color("#4b8287"))
+	UI.unit_sprite(screen,warrior.sprite,937,608,Vector2(187,178))
+	UI.sprite(screen,"Scenery_16",770,607,1.05,Color("#e3ba89"))
 	_footer("第一地域  ·  " + REGION,"ABYSS EXPEDITION")
 
 func _show_choice() -> void:
@@ -127,7 +129,7 @@ func _show_choice() -> void:
 		var id: String = ids[i]
 		var h := Content.definition("heroes",id)
 		var x := 42+i*201
-		var card := UI.button(screen,"",x,214,186,326,_choose_hero.bind(id),id == selected_hero)
+		var card := UI.button(screen,"",x,214,186,326,_choose_hero.bind(id),id == selected_hero,true)
 		card.tooltip_text = h.passive_text
 		UI.unit_sprite(screen,h.sprite,x+93,444,Vector2(116,220))
 		UI.rule(screen,x+15,452,156)
@@ -184,7 +186,8 @@ func _show_map() -> void:
 	UI.frame(screen,42,568,232,89)
 	UI.label(screen,"本轮种子",59,575,191,24,13,UI.GOLD)
 	UI.label(screen,str(run.seed_value),59,605,191,28,20,UI.PALE,"body")
-	UI.panel(screen,292,101,675,554,Color("#59493c"),Color("#8a7054"))
+	UI.frame(screen,284,89,689,581,UI.ThemeArt.wood)
+	UI.frame(screen,298,98,660,561,UI.ThemeArt.parchment)
 	var scroll := ScrollContainer.new()
 	scroll.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
 	UI.at(screen,scroll,306,102,648,552)

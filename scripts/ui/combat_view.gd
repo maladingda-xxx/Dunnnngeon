@@ -37,10 +37,10 @@ func setup(model, room_name: String, depth: int) -> void:
 	battle = model
 	battle.impacted.connect(_impact)
 	battle.narrated.connect(_narrate)
-	UI.panel(self,40,91,298,63,Color("#111822de"))
+	UI.frame(self,40,91,298,63)
 	UI.label(self,room_name,57,97,256,26,20,UI.PALE,"display")
 	UI.label(self,"楼层 %02d  /  盐蚀地窟" % depth,57,124,261,23,12,UI.GOLD)
-	UI.panel(self,1009,96,230,48,Color("#111822de"))
+	UI.frame(self,1009,96,230,48)
 	phase_label = UI.label(self,"",1022,96,204,48,15,UI.TEAL,"body",HORIZONTAL_ALIGNMENT_CENTER)
 	UI.rule(self,424,110,432,1,Color("#797064"))
 	UI.rule(self,518,106,244,9,Color("#171f2a"))
@@ -62,8 +62,6 @@ func setup(model, room_name: String, depth: int) -> void:
 		_unit(enemy,x,false,giant and i == 0)
 	for spot in [96,1184]:
 		UI.sprite(field,"Scenery_16",spot,417,0.75,Color("#d1aa80"))
-	for spot in [19,1256]:
-		UI.sprite(field,"Scenery_20",spot,423,0.55,Color("#609093"))
 	effects = CombatFX.new()
 	field.add_child(effects)
 	UI.frame(self,40,497,718,163)

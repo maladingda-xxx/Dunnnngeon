@@ -1,15 +1,16 @@
 extends RefCounted
 
 const Assets = preload("res://scripts/core/asset_catalog.gd")
+const ThemeArt = preload("res://scripts/ui/ui_skin.gd")
 const UNIT_SHADER = preload("res://scripts/ui/combat_flash.gdshader")
 const PIXEL_FONT = preload("res://assets/fonts/fusion-pixel-12px-proportional-zh_hans.otf")
 const INK := Color("#10131c")
 const GOLD := Color("#d1ae77")
 const PALE := Color("#eee0c7")
-const MUTED := Color("#a49e99")
+const MUTED := Color("#bbb2a7")
 const TEAL := Color("#7dbab4")
 const RED := Color("#bf6b65")
-const LINE := Color("#524539")
+const LINE := Color("#79654f")
 static var display_font: FontVariation
 
 static func font(face: String) -> Font:
@@ -65,21 +66,26 @@ static func rule(parent: Node, x: float, y: float, w: float, h := 1.0, color := 
 	at(parent,node,x,y,w,h)
 	return node
 
-static func button(parent: Node, value: String, x: float, y: float, w: float, h: float, action: Callable, accent := false) -> Button:
+static func button(parent: Node, value: String, x: float, y: float, w: float, h: float, action: Callable, accent := false, portrait_card := false) -> Button:
+	ThemeArt.prepare()
 	var node := Button.new()
 	node.text = value
+	node.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
 	node.mouse_default_cursor_shape = Control.CURSOR_POINTING_HAND
 	node.add_theme_font_override("font",font("body"))
 	node.add_theme_font_size_override("font_size",16)
 	node.add_theme_color_override("font_color",PALE)
-	node.add_theme_color_override("font_disabled_color",Color("#7e7981"))
-	node.add_theme_color_override("font_hover_color",Color("#fff0d0"))
-	node.add_theme_stylebox_override("normal",style(Color("#51382c") if accent else Color("#1c202a"),Color("#a37c50") if accent else LINE))
-	node.add_theme_stylebox_override("hover",style(Color("#675037") if accent else Color("#32343d"),GOLD))
-	node.add_theme_stylebox_override("pressed",style(Color("#382e24"),GOLD))
-	node.add_theme_stylebox_override("disabled",style(Color("#1b1c24"),Color("#38323a")))
-	var focus := style(Color.TRANSPARENT,TEAL)
+	node.add_theme_color_override("font_disabled_color",Color("#c0bbc0"))
+	node.add_theme_color_override("font_hover_color",Color("#fff6e3"))
+	node.add_theme_color_override("font_pressed_color",PALE)
+	node.add_theme_color_override("font_outline_color",Color("#1a202bd9"))
+	node.add_theme_constant_override("outline_size",1)
+	var states: Dictionary = ThemeArt.cards[accent] if portrait_card else ThemeArt.buttons[accent]
+	for state in states:
+		node.add_theme_stylebox_override(state,states[state])
+	var focus := style(Color.TRANSPARENT,Color("#fff0bb"),2,4)
 	focus.draw_center = false
+	focus.set_expand_margin_all(2)
 	node.add_theme_stylebox_override("focus",focus)
 	if action.is_valid():
 		node.pressed.connect(action)
@@ -141,9 +147,11 @@ static func text_block(parent: Node, value: String, x: float, y: float, w: float
 	node.vertical_alignment = VERTICAL_ALIGNMENT_TOP
 	return node
 
-static func frame(parent: Node, x: float, y: float, w: float, h: float) -> void:
-	panel(parent,x,y,w,h)
-	for corner in [Vector2(x,y),Vector2(x+w-12,y),Vector2(x,y+h-12),Vector2(x+w-12,y+h-12)]:
-		rule(parent,corner.x,corner.y,12,1,Color("#977550"))
-		rule(parent,corner.x,corner.y+11,12,1,Color("#977550"))
+static func frame(parent: Node, x: float, y: float, w: float, h: float, skin: StyleBoxTexture = null) -> void:
+	ThemeArt.prepare()
+	var node := Panel.new()
+	node.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
+	node.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	node.add_theme_stylebox_override("panel",ThemeArt.panel if skin == null else skin)
+	at(parent,node,x,y,w,h)
 

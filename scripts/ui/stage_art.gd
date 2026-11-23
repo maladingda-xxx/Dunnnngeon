@@ -1,11 +1,16 @@
 extends Control
 
 const Assets = preload("res://scripts/core/asset_catalog.gd")
+const ThemeArt = preload("res://scripts/ui/ui_skin.gd")
+const PENNANT := preload("res://assets/Tiny Swords (Free Pack)/UI Elements/UI Banners from the store page/Ribbons/Ribbon_Blue.png")
+const PENNANT_REGION := Rect2(53,448,86,105)
+const ROCKS := preload("res://assets/Tiny Swords (Free Pack)/Terrain/Decorations/Rocks/Rock2.png")
 var mode := "title"
 
 func _ready() -> void:
 	mouse_filter = MOUSE_FILTER_IGNORE
 	texture_filter = TEXTURE_FILTER_NEAREST
+	ThemeArt.prepare()
 
 func _draw() -> void:
 	draw_rect(Rect2(0,0,1280,720),Color("#0b1019"))
@@ -24,20 +29,7 @@ func _block(x: float, y: float, w: float, h: float, hex: String) -> void:
 	draw_rect(Rect2(x,y,w,h),Color(hex))
 
 func _archive() -> void:
-	for y in range(84,680,16):
-		var ratio := float(y - 84) / 596.0
-		draw_rect(Rect2(0,y,1280,16),Color("#171d28").lerp(Color("#0d111b"),ratio))
-	var rng := RandomNumberGenerator.new()
-	rng.seed = 1450
-	for i in range(820):
-		var x := rng.randi_range(0,1279)
-		var y := rng.randi_range(0,719)
-		draw_rect(Rect2(x,y,2,2),Color("#b1a68a19"))
-	for cx in [86,1190]:
-		for r in [54,62,105,113,179]:
-			draw_arc(Vector2(cx,580),r,0,TAU,64,Color("#ba9c7826"),1.0,true)
-		draw_line(Vector2(cx,86),Vector2(cx,720),Color("#ba9c781d"))
-		draw_line(Vector2(cx-110,580),Vector2(cx+110,580),Color("#ba9c781d"))
+	draw_texture_rect(ThemeArt.archive,Rect2(0,0,1280,720),true,Color("#4d5767"))
 
 func _ruin(combat: bool) -> void:
 	var floor_y := 418 if combat else 606
@@ -56,7 +48,7 @@ func _ruin(combat: bool) -> void:
 		if abs(x-center) > (228 if combat else 280):
 			masonry.draw_rect(get_canvas_item(),Rect2(x,floor_y-124,72,72),false,Color("#70828d44"))
 			masonry.draw_rect(get_canvas_item(),Rect2(x-8,floor_y-52,72,56),false,Color("#68778646"))
-	for i in range(720):
+	for i in range(260):
 		var x := rng.randi_range(0,319)*4
 		var y := rng.randi_range(12,floor_y/4)*4
 		var hue := Color("#829ea218") if i % 5 == 0 else Color("#05091125")
@@ -64,6 +56,14 @@ func _ruin(combat: bool) -> void:
 	for offset in [-387,-241,243,388]:
 		_pillar(center + offset, floor_y, floor_y * 0.67,36 if absi(offset) > 300 else 24)
 	_arch(center,floor_y,204 if combat else 266,263 if combat else 383)
+	var hanging_distance := 387 if combat else 242
+	var hanging_y := floor_y - (254 if combat else 385)
+	var pennant_scale := 0.72 if combat else 1.0
+	var cloth_size := (PENNANT_REGION.size * pennant_scale).round()
+	for x in [center - hanging_distance, center + hanging_distance]:
+		var left: float = x - floorf(cloth_size.x * 0.5)
+		_block(left-4,hanging_y-5,cloth_size.x+8,6,"#5a6264")
+		draw_texture_rect_region(PENNANT,Rect2(Vector2(left,hanging_y),cloth_size),PENNANT_REGION,Color("#85939e"))
 	if combat:
 		for x in [117,1162]:
 			_torch(x,floor_y-121)
@@ -86,6 +86,9 @@ func _ruin(combat: bool) -> void:
 		_pillar(x,floor_y,440,50)
 	_poly([[0,0],[60,0],[47,201],[24,313],[20,floor_y],[0,floor_y]],"#0b0f19")
 	_poly([[1280,0],[1232,0],[1243,152],[1257,303],[1260,floor_y],[1280,floor_y]],"#0b0f19")
+	var rock_size := 64 if combat else 96
+	for x in ([32,1247] if combat else [700,1178]):
+		draw_texture_rect(ROCKS,Rect2(x-rock_size/2.0,floor_y-rock_size*0.78,rock_size,rock_size),false,Color("#90a5b0"))
 	if not combat:
 		for i in range(25):
 			draw_rect(Rect2(i*20,0,20,720),Color(0.026,0.036,0.065,1.0-float(i)/26.0))
