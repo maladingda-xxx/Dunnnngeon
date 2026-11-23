@@ -33,6 +33,7 @@ func _run_tests() -> void:
 	_status_duration()
 	_storage_and_gear()
 	_full_seeded_run()
+	_enemy_idle_animation()
 	await _combat_animation()
 	await _ui_loop()
 	await _room_screens()
@@ -140,6 +141,23 @@ func _combat_rules() -> void:
 	loss.start()
 	loss.act_enemy()
 	_expect(loss.result == "defeat","Total party defeat did not end combat")
+
+func _enemy_idle_animation() -> void:
+	for id in Content.keys("enemies"):
+		var enemy := Party.make(id,"e0",1,"enemies")
+		var model := Combat.new([Party.make("warrior","h0")],[enemy],4)
+		var combat := CombatView.new()
+		root.add_child(combat)
+		combat.setup(model,"动画测试",1)
+		combat._process(0.0)
+		var slot: Dictionary = combat.units.e0
+		var first_frame: Texture2D = slot.art.texture
+		var material: ShaderMaterial = slot.art.material
+		var first_pose: Variant = material.get_shader_parameter("deformation")
+		combat._process(0.375)
+		var animated: bool = slot.art.texture != first_frame or material.get_shader_parameter("deformation") != first_pose
+		_expect(animated,"Enemy idle stayed still: " + id)
+		combat.queue_free()
 
 func _combat_animation() -> void:
 	for hero_id in ["warrior","ranger"]:

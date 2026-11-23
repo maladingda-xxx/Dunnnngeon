@@ -2,7 +2,11 @@ shader_type canvas_item;
 
 uniform float flash : hint_range(0.0, 1.0) = 0.0;
 uniform bool forest_palette = false;
+uniform vec4 deform_region = vec4(0.0);
+uniform vec2 deform_size = vec2(0.0);
+uniform vec4 deformation = vec4(0.0);
 varying vec4 tint;
+const float POSE_OVERSCAN = 1.8;
 
 // In each 192 px Archer frame, the quiver and tunic share the same brown.
 // Each mask stores the first tunic row, the quiver gap on that row, and the left edge.
@@ -51,10 +55,29 @@ vec3 forest_green(vec3 source, ivec2 pixel, int sheet_width) {
 
 void vertex() {
 	tint = COLOR;
+	if (deform_region.z > 0.0) {
+		vec2 center = deform_size * 0.5;
+		VERTEX = center + (VERTEX - center) * POSE_OVERSCAN;
+	}
 }
 
 void fragment() {
-	vec4 pixel = texture(TEXTURE, UV);
+	vec2 sample_uv = UV;
+	float inside = 1.0;
+	if (deform_region.z > 0.0) {
+		vec2 local = ((UV - deform_region.xy) / deform_region.zw - 0.5) * POSE_OVERSCAN + 0.5;
+		float upper = 1.0 - smoothstep(0.05, 0.94, local.y);
+		float hem = smoothstep(0.40, 0.95, local.y);
+		float wings = smoothstep(0.14, 0.49, abs(local.x - 0.5));
+		local -= vec2(deformation.x * upper + deformation.w * hem,
+			deformation.y * upper + deformation.z * wings);
+		inside = step(0.0, local.x) * step(local.x, 1.0) * step(0.0, local.y) * step(local.y, 1.0);
+		vec2 half_pixel = 0.5 * TEXTURE_PIXEL_SIZE;
+		sample_uv = clamp(deform_region.xy + local * deform_region.zw,
+			deform_region.xy + half_pixel, deform_region.xy + deform_region.zw - half_pixel);
+	}
+	vec4 pixel = texture(TEXTURE, sample_uv);
+	pixel.a *= inside;
 	if (forest_palette) {
 		ivec2 sheet = textureSize(TEXTURE, 0);
 		pixel.rgb = forest_green(pixel.rgb, ivec2(UV * vec2(sheet)), sheet.x);

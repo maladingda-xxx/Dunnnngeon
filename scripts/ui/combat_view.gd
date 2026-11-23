@@ -9,6 +9,7 @@ const Content = preload("res://scripts/core/content.gd")
 const Assets = preload("res://scripts/core/asset_catalog.gd")
 const Combat = preload("res://scripts/core/combat_manager.gd")
 const CombatFX = preload("res://scripts/ui/combat_effects.gd")
+const EnemyMotion = preload("res://scripts/ui/enemy_motion.gd")
 const RUN_FRAME_TIME := 0.043
 
 var field: Node2D
@@ -88,7 +89,7 @@ func _unit(data: Dictionary, cx: int, friendly: bool, large := false) -> void:
 	var bounds := Vector2(110,225) if friendly else Vector2(137,151)
 	if large:
 		bounds = Vector2(246,212)
-	var hover := 45.0 if data.id == "bat" else (14.0 if data.id == "wraith" else 0.0)
+	var hover := 45.0 if data.id == "bat" else (14.0 if data.id in ["wraith","priest"] else 0.0)
 	var light := Color("#dbe7ef") if friendly else Color("#ece0e5")
 	var home := Vector2(cx,419-hover)
 	var rig := Node2D.new()
@@ -99,6 +100,7 @@ func _unit(data: Dictionary, cx: int, friendly: bool, large := false) -> void:
 	var art := UI.unit_sprite(pose,data.sprite,0,0,bounds,light,not friendly)
 	if art.material == null:
 		art.material = UI.unit_material()
+	var skin_motion := EnemyMotion.attach(data.id,art)
 	var hp := UI.bar(self,cx-46,436,92,7,Color("#9d4d4c") if friendly else Color("#b95348"))
 	var stress := UI.bar(self,cx-46,446,92,4,Color("#628b91"))
 	stress.visible = friendly
@@ -122,7 +124,8 @@ func _unit(data: Dictionary, cx: int, friendly: bool, large := false) -> void:
 		"base_extent":art.size,"art_scale":art.size.x/art.texture.get_width(),
 		"bar":hp,"stress":stress,"marker":marker,"label":name_label,"number":number,"button":hit_button,
 		"dying":false,"active":false,"running":false,"hover":hover,
-		"frames":Assets.frame_count(data.sprite),"frame":0,"clip_tween":null,"reaction":null
+		"frames":Assets.frame_count(data.sprite),"frame":0,"clip_tween":null,"reaction":null,
+		"skin_motion":skin_motion
 	}
 
 func _process(delta: float) -> void:
@@ -131,14 +134,19 @@ func _process(delta: float) -> void:
 		if slot.data.hp <= 0:
 			continue
 		var clip: Tween = slot.clip_tween
+		var skin_motion: EnemyMotion = slot.skin_motion
 		if slot.running:
-			var stride := floori((clock-float(slot.run_start))/RUN_FRAME_TIME)
+			var elapsed := clock-float(slot.run_start)
 			if Assets.frame_count(slot.data.sprite,"run") > 0:
-				_set_pose(slot,"run",stride)
+				_set_pose(slot,"run",floori(elapsed/RUN_FRAME_TIME))
 			else:
-				slot.pose.position.y = -absf(sin((clock-float(slot.run_start))*30.0))*13.0
+				slot.pose.position.y = -absf(sin(elapsed*30.0))*13.0
+				if skin_motion != null:
+					skin_motion.loop(elapsed,true)
 		elif not slot.active and (clip == null or not clip.is_running()):
 			var idle_time := clock + float(slot.cx)/400.0
+			if skin_motion != null:
+				skin_motion.loop(idle_time,false)
 			if slot.hover > 0.0:
 				slot.rig.position.y = slot.home.y + roundf(sin(idle_time*3.0)*4.0)
 			var frame := floori(idle_time*8.0) % int(slot.frames)
@@ -235,13 +243,18 @@ func _animate_action(action: Dictionary) -> void:
 		playback = _play_clip(slot,clip,frame_time,release_frame)
 	else:
 		var pose: Node2D = slot.pose
+		var skin_motion: EnemyMotion = slot.skin_motion
 		var windup := create_tween().set_parallel(true)
 		windup.tween_property(pose,"scale",Vector2(0.94,1.08),0.08)
 		windup.tween_property(pose,"rotation",-direction*0.10,0.08)
+		if skin_motion != null:
+			windup.tween_method(skin_motion.set_pose,skin_motion.pose,-skin_motion.strike*0.45,0.08)
 		await windup.finished
 		var release := create_tween().set_parallel(true)
 		release.tween_property(pose,"scale",Vector2.ONE,0.12)
 		release.tween_property(pose,"rotation",0.0,0.12)
+		if skin_motion != null:
+			release.tween_method(skin_motion.set_pose,skin_motion.strike,Vector4.ZERO,0.12)
 		if motion == "melee":
 			pose.position.x = direction*14.0
 			release.tween_property(pose,"position",Vector2.ZERO,0.12)
@@ -338,6 +351,9 @@ func _fall(slot: Dictionary) -> void:
 		slot.reaction.kill()
 	var pose: Node2D = slot.pose
 	var art: TextureRect = slot.art
+	var skin_motion: EnemyMotion = slot.skin_motion
+	if skin_motion != null:
+		skin_motion.set_pose(Vector4.ZERO)
 	pose.rotation = 0.0
 	pose.position = Vector2.ZERO
 	pose.scale = Vector2.ONE
