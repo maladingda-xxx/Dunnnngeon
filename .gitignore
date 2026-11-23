@@ -1,0 +1,46 @@
+# Godot 4 editor cache and generated imports.
+# Commit source-adjacent *.uid and *.import files.
+/.godot/
+*.translation
+
+# Generated export templates and build output.
+/android/
+/build/
+/dist/
+/export/
+/exports/
+*.pck
+*.apk
+*.aab
+*.exe
+*.msi
+*.app/
+/*.zip
+/*.7z
+
+# Export credentials and local secrets.
+/export_credentials.cfg
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.keystore
+*.jks
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Local tools, backups and OS metadata.
+/addons/.godot_ai_update/
+/.idea/
+/.vscode/
+*.log
+*.tmp
+*~
+.DS_Store
+Thumbs.db
+[Dd]esktop.ini
+
+# Download this dependency from Pixel Frog before opening the project.
+/assets/Tiny Swords (Free Pack)/

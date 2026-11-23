@@ -1,0 +1,126 @@
+{
+  "ember": {
+    "name": "余烬药剂",
+    "icon": "Items_3",
+    "type": "consumable",
+    "quality": "普通",
+    "cost": 13,
+    "heal": 19,
+    "desc": "为一位生还成员恢复最多 19 点生命。"
+  },
+  "calm": {
+    "name": "镇静露",
+    "icon": "Items_2",
+    "type": "consumable",
+    "quality": "普通",
+    "cost": 10,
+    "stress": -28,
+    "desc": "为一位生还成员缓解 28 压力。"
+  },
+  "salt": {
+    "name": "净潮盐",
+    "icon": "Items_4",
+    "type": "consumable",
+    "quality": "普通",
+    "cost": 18,
+    "cleanse": true,
+    "heal": 8,
+    "desc": "恢复 8 点生命，移除四种负面状态。"
+  },
+  "blade": {
+    "name": "潮磨短剑",
+    "icon": "Items_11",
+    "type": "weapon",
+    "quality": "普通",
+    "cost": 25,
+    "stats": {
+      "attack": 2
+    },
+    "desc": "攻击 +2。"
+  },
+  "knife": {
+    "name": "盐痕短刃",
+    "icon": "Items_18",
+    "type": "weapon",
+    "quality": "普通",
+    "cost": 25,
+    "stats": {
+      "speed": 2,
+      "crit": 0.07
+    },
+    "desc": "速度 +2，暴击率 +7%。"
+  },
+  "seal": {
+    "name": "铆铁徽记",
+    "icon": "Items_51",
+    "type": "relic",
+    "quality": "普通",
+    "cost": 24,
+    "stats": {
+      "max_hp": 7,
+      "defense": 1
+    },
+    "desc": "生命上限 +7，防御 +1。"
+  },
+  "talisman": {
+    "name": "萤石护符",
+    "icon": "Items_53",
+    "type": "relic",
+    "quality": "稀有",
+    "cost": 43,
+    "stats": {
+      "dodge": 0.09,
+      "defense": 2
+    },
+    "desc": "闪避率 +9%，防御 +2。"
+  },
+  "codex": {
+    "name": "藻纹咒典",
+    "icon": "Items_36",
+    "type": "relic",
+    "quality": "稀有",
+    "cost": 41,
+    "stats": {
+      "attack": 3,
+      "crit": 0.07
+    },
+    "desc": "攻击 +3，暴击率 +7%。"
+  },
+  "axe": {
+    "name": "劈潮斧",
+    "icon": "Items_23",
+    "type": "weapon",
+    "quality": "稀有",
+    "cost": 45,
+    "stats": {
+      "attack": 5,
+      "speed": -1
+    },
+    "desc": "攻击 +5，速度 -1。"
+  },
+  "lantern": {
+    "name": "银灯节杖",
+    "icon": "Items_14",
+    "type": "relic",
+    "quality": "遗物",
+    "cost": 63,
+    "stats": {
+      "max_hp": 10,
+      "defense": 3,
+      "speed": 1
+    },
+    "desc": "生命上限 +10，防御 +3，速度 +1。"
+  },
+  "dawn": {
+    "name": "黎明残刃",
+    "icon": "Items_68",
+    "type": "weapon",
+    "quality": "遗物",
+    "cost": 66,
+    "stats": {
+      "attack": 7,
+      "crit": 0.09
+    },
+    "desc": "攻击 +7，暴击率 +9%。"
+  }
+}

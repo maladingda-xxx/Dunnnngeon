@@ -1,0 +1,2504 @@
+{
+  "Chars_0": {
+    "source": "res://assets/Chars/Chars_0.png",
+    "region": [
+      32,
+      24,
+      56,
+      80
+    ]
+  },
+  "Chars_1": {
+    "source": "res://assets/Chars/Chars_1.png",
+    "region": [
+      40,
+      16,
+      56,
+      88
+    ]
+  },
+  "Chars_2": {
+    "source": "res://assets/Chars/Chars_2.png",
+    "region": [
+      40,
+      16,
+      48,
+      88
+    ]
+  },
+  "Chars_3": {
+    "source": "res://assets/Chars/Chars_3.png",
+    "region": [
+      32,
+      16,
+      56,
+      88
+    ]
+  },
+  "Chars_4": {
+    "source": "res://assets/Chars/Chars_4.png",
+    "region": [
+      40,
+      24,
+      48,
+      88
+    ]
+  },
+  "Chars_5": {
+    "source": "res://assets/Chars/Chars_5.png",
+    "region": [
+      32,
+      24,
+      56,
+      88
+    ]
+  },
+  "Chars_6": {
+    "source": "res://assets/Chars/Chars_6.png",
+    "region": [
+      40,
+      24,
+      48,
+      88
+    ]
+  },
+  "Chars_7": {
+    "source": "res://assets/Chars/Chars_7.png",
+    "region": [
+      24,
+      24,
+      72,
+      88
+    ]
+  },
+  "Chars_8": {
+    "source": "res://assets/Chars/Chars_8.png",
+    "region": [
+      40,
+      24,
+      48,
+      88
+    ]
+  },
+  "Chars_9": {
+    "source": "res://assets/Chars/Chars_9.png",
+    "region": [
+      40,
+      16,
+      48,
+      96
+    ]
+  },
+  "Chars_10": {
+    "source": "res://assets/Chars/Chars_10.png",
+    "region": [
+      32,
+      16,
+      64,
+      96
+    ]
+  },
+  "Chars_11": {
+    "source": "res://assets/Chars/Chars_11.png",
+    "region": [
+      40,
+      24,
+      48,
+      88
+    ]
+  },
+  "Chars_12": {
+    "source": "res://assets/Chars/Chars_12.png",
+    "region": [
+      24,
+      24,
+      72,
+      88
+    ]
+  },
+  "Chars_13": {
+    "source": "res://assets/Chars/Chars_13.png",
+    "region": [
+      40,
+      24,
+      48,
+      72
+    ]
+  },
+  "Chars_14": {
+    "source": "res://assets/Chars/Chars_14.png",
+    "region": [
+      40,
+      24,
+      48,
+      72
+    ]
+  },
+  "Chars_15": {
+    "source": "res://assets/Chars/Chars_15.png",
+    "region": [
+      32,
+      32,
+      64,
+      64
+    ]
+  },
+  "Chars_16": {
+    "source": "res://assets/Chars/Chars_16.png",
+    "region": [
+      32,
+      24,
+      48,
+      72
+    ]
+  },
+  "Chars_17": {
+    "source": "res://assets/Chars/Chars_17.png",
+    "region": [
+      32,
+      24,
+      48,
+      72
+    ]
+  },
+  "Chars_18": {
+    "source": "res://assets/Chars/Chars_18.png",
+    "region": [
+      40,
+      24,
+      48,
+      72
+    ]
+  },
+  "Monsters_0": {
+    "source": "res://assets/Monsters/Monsters_0.png",
+    "region": [
+      40,
+      40,
+      48,
+      56
+    ]
+  },
+  "Monsters_1": {
+    "source": "res://assets/Monsters/Monsters_1.png",
+    "region": [
+      24,
+      32,
+      72,
+      64
+    ]
+  },
+  "Monsters_2": {
+    "source": "res://assets/Monsters/Monsters_2.png",
+    "region": [
+      56,
+      32,
+      32,
+      64
+    ]
+  },
+  "Monsters_3": {
+    "source": "res://assets/Monsters/Monsters_3.png",
+    "region": [
+      40,
+      48,
+      48,
+      48
+    ]
+  },
+  "Monsters_4": {
+    "source": "res://assets/Monsters/Monsters_4.png",
+    "region": [
+      32,
+      32,
+      64,
+      64
+    ]
+  },
+  "Monsters_5": {
+    "source": "res://assets/Monsters/Monsters_5.png",
+    "region": [
+      32,
+      40,
+      64,
+      56
+    ]
+  },
+  "Monsters_6": {
+    "source": "res://assets/Monsters/Monsters_6.png",
+    "region": [
+      32,
+      64,
+      72,
+      32
+    ]
+  },
+  "Monsters_7": {
+    "source": "res://assets/Monsters/Monsters_7.png",
+    "region": [
+      32,
+      48,
+      64,
+      48
+    ]
+  },
+  "Monsters_8": {
+    "source": "res://assets/Monsters/Monsters_8.png",
+    "region": [
+      32,
+      48,
+      64,
+      48
+    ]
+  },
+  "Monsters_9": {
+    "source": "res://assets/Monsters/Monsters_9.png",
+    "region": [
+      32,
+      32,
+      64,
+      64
+    ]
+  },
+  "Monsters_10": {
+    "source": "res://assets/Monsters/Monsters_10.png",
+    "region": [
+      24,
+      48,
+      72,
+      48
+    ]
+  },
+  "Monsters_11": {
+    "source": "res://assets/Monsters/Monsters_11.png",
+    "region": [
+      0,
+      40,
+      128,
+      40
+    ]
+  },
+  "Monsters_12": {
+    "source": "res://assets/Monsters/Monsters_12.png",
+    "region": [
+      24,
+      40,
+      72,
+      48
+    ]
+  },
+  "Monsters_13": {
+    "source": "res://assets/Monsters/Monsters_13.png",
+    "region": [
+      32,
+      32,
+      64,
+      56
+    ]
+  },
+  "Monsters_14": {
+    "source": "res://assets/Monsters/Monsters_14.png",
+    "region": [
+      40,
+      40,
+      56,
+      48
+    ]
+  },
+  "Monsters_15": {
+    "source": "res://assets/Monsters/Monsters_15.png",
+    "region": [
+      16,
+      24,
+      88,
+      80
+    ]
+  },
+  "Monsters_16": {
+    "source": "res://assets/Monsters/Monsters_16.png",
+    "region": [
+      40,
+      16,
+      40,
+      88
+    ]
+  },
+  "Monsters_17": {
+    "source": "res://assets/Monsters/Monsters_17.png",
+    "region": [
+      32,
+      16,
+      72,
+      88
+    ]
+  },
+  "Monsters_18": {
+    "source": "res://assets/Monsters/Monsters_18.png",
+    "region": [
+      16,
+      16,
+      80,
+      88
+    ]
+  },
+  "Monsters_19": {
+    "source": "res://assets/Monsters/Monsters_19.png",
+    "region": [
+      32,
+      32,
+      72,
+      64
+    ]
+  },
+  "Monsters_20": {
+    "source": "res://assets/Monsters/Monsters_20.png",
+    "region": [
+      8,
+      16,
+      104,
+      88
+    ]
+  },
+  "Monsters_21": {
+    "source": "res://assets/Monsters/Monsters_21.png",
+    "region": [
+      16,
+      16,
+      96,
+      96
+    ]
+  },
+  "Monsters_22": {
+    "source": "res://assets/Monsters/Monsters_22.png",
+    "region": [
+      16,
+      8,
+      96,
+      112
+    ]
+  },
+  "Monsters_23": {
+    "source": "res://assets/Monsters/Monsters_23.png",
+    "region": [
+      0,
+      16,
+      128,
+      96
+    ]
+  },
+  "Monsters_24": {
+    "source": "res://assets/Monsters/Monsters_24.png",
+    "region": [
+      40,
+      56,
+      56,
+      32
+    ]
+  },
+  "Monsters_25": {
+    "source": "res://assets/Monsters/Monsters_25.png",
+    "region": [
+      48,
+      24,
+      32,
+      72
+    ]
+  },
+  "Monsters_26": {
+    "source": "res://assets/Monsters/Monsters_26.png",
+    "region": [
+      32,
+      32,
+      56,
+      64
+    ]
+  },
+  "Monsters_27": {
+    "source": "res://assets/Monsters/Monsters_27.png",
+    "region": [
+      32,
+      16,
+      64,
+      72
+    ]
+  },
+  "Monsters_28": {
+    "source": "res://assets/Monsters/Monsters_28.png",
+    "region": [
+      32,
+      48,
+      72,
+      40
+    ]
+  },
+  "Monsters_29": {
+    "source": "res://assets/Monsters/Monsters_29.png",
+    "region": [
+      48,
+      56,
+      40,
+      32
+    ]
+  },
+  "Monsters_30": {
+    "source": "res://assets/Monsters/Monsters_30.png",
+    "region": [
+      24,
+      48,
+      80,
+      40
+    ]
+  },
+  "Monsters_31": {
+    "source": "res://assets/Monsters/Monsters_31.png",
+    "region": [
+      8,
+      8,
+      112,
+      112
+    ]
+  },
+  "Monsters_32": {
+    "source": "res://assets/Monsters/Monsters_32.png",
+    "region": [
+      48,
+      64,
+      40,
+      16
+    ]
+  },
+  "Monsters_33": {
+    "source": "res://assets/Monsters/Monsters_33.png",
+    "region": [
+      32,
+      32,
+      64,
+      56
+    ]
+  },
+  "Monsters_34": {
+    "source": "res://assets/Monsters/Monsters_34.png",
+    "region": [
+      32,
+      40,
+      56,
+      48
+    ]
+  },
+  "Monsters_35": {
+    "source": "res://assets/Monsters/Monsters_35.png",
+    "region": [
+      48,
+      40,
+      40,
+      48
+    ]
+  },
+  "Monsters_36": {
+    "source": "res://assets/Monsters/Monsters_36.png",
+    "region": [
+      32,
+      40,
+      72,
+      48
+    ]
+  },
+  "Monsters_37": {
+    "source": "res://assets/Monsters/Monsters_37.png",
+    "region": [
+      16,
+      16,
+      96,
+      96
+    ]
+  },
+  "Monsters_38": {
+    "source": "res://assets/Monsters/Monsters_38.png",
+    "region": [
+      32,
+      40,
+      64,
+      48
+    ]
+  },
+  "Monsters_39": {
+    "source": "res://assets/Monsters/Monsters_39.png",
+    "region": [
+      32,
+      48,
+      64,
+      48
+    ]
+  },
+  "Giants_0": {
+    "source": "res://assets/Giants/Giants_0.png",
+    "region": [
+      24,
+      72,
+      208,
+      120
+    ]
+  },
+  "Giants_1": {
+    "source": "res://assets/Giants/Giants_1.png",
+    "region": [
+      56,
+      48,
+      144,
+      128
+    ]
+  },
+  "Giants_2": {
+    "source": "res://assets/Giants/Giants_2.png",
+    "region": [
+      80,
+      48,
+      128,
+      128
+    ]
+  },
+  "Giants_3": {
+    "source": "res://assets/Giants/Giants_3.png",
+    "region": [
+      64,
+      56,
+      128,
+      128
+    ]
+  },
+  "Giants_4": {
+    "source": "res://assets/Giants/Giants_4.png",
+    "region": [
+      48,
+      64,
+      168,
+      120
+    ]
+  },
+  "Giants_5": {
+    "source": "res://assets/Giants/Giants_5.png",
+    "region": [
+      56,
+      72,
+      152,
+      120
+    ]
+  },
+  "Scenery_0": {
+    "source": "res://assets/Scenery/Scenery_0.png",
+    "region": [
+      16,
+      32,
+      88,
+      64
+    ]
+  },
+  "Scenery_1": {
+    "source": "res://assets/Scenery/Scenery_1.png",
+    "region": [
+      16,
+      32,
+      88,
+      64
+    ]
+  },
+  "Scenery_2": {
+    "source": "res://assets/Scenery/Scenery_2.png",
+    "region": [
+      0,
+      24,
+      120,
+      72
+    ]
+  },
+  "Scenery_3": {
+    "source": "res://assets/Scenery/Scenery_3.png",
+    "region": [
+      32,
+      8,
+      64,
+      112
+    ]
+  },
+  "Scenery_4": {
+    "source": "res://assets/Scenery/Scenery_4.png",
+    "region": [
+      48,
+      32,
+      40,
+      72
+    ]
+  },
+  "Scenery_5": {
+    "source": "res://assets/Scenery/Scenery_5.png",
+    "region": [
+      40,
+      48,
+      56,
+      48
+    ]
+  },
+  "Scenery_6": {
+    "source": "res://assets/Scenery/Scenery_6.png",
+    "region": [
+      40,
+      40,
+      56,
+      56
+    ]
+  },
+  "Scenery_7": {
+    "source": "res://assets/Scenery/Scenery_7.png",
+    "region": [
+      40,
+      48,
+      48,
+      48
+    ]
+  },
+  "Scenery_8": {
+    "source": "res://assets/Scenery/Scenery_8.png",
+    "region": [
+      40,
+      48,
+      40,
+      48
+    ]
+  },
+  "Scenery_9": {
+    "source": "res://assets/Scenery/Scenery_9.png",
+    "region": [
+      32,
+      32,
+      80,
+      72
+    ]
+  },
+  "Scenery_10": {
+    "source": "res://assets/Scenery/Scenery_10.png",
+    "region": [
+      32,
+      8,
+      72,
+      104
+    ]
+  },
+  "Scenery_11": {
+    "source": "res://assets/Scenery/Scenery_11.png",
+    "region": [
+      48,
+      40,
+      32,
+      56
+    ]
+  },
+  "Scenery_12": {
+    "source": "res://assets/Scenery/Scenery_12.png",
+    "region": [
+      16,
+      24,
+      88,
+      80
+    ]
+  },
+  "Scenery_13": {
+    "source": "res://assets/Scenery/Scenery_13.png",
+    "region": [
+      8,
+      32,
+      112,
+      56
+    ]
+  },
+  "Scenery_14": {
+    "source": "res://assets/Scenery/Scenery_14.png",
+    "region": [
+      8,
+      40,
+      112,
+      48
+    ]
+  },
+  "Scenery_15": {
+    "source": "res://assets/Scenery/Scenery_15.png",
+    "region": [
+      16,
+      32,
+      104,
+      56
+    ]
+  },
+  "Scenery_16": {
+    "source": "res://assets/Scenery/Scenery_16.png",
+    "region": [
+      40,
+      56,
+      40,
+      32
+    ]
+  },
+  "Scenery_17": {
+    "source": "res://assets/Scenery/Scenery_17.png",
+    "region": [
+      32,
+      32,
+      64,
+      56
+    ]
+  },
+  "Scenery_18": {
+    "source": "res://assets/Scenery/Scenery_18.png",
+    "region": [
+      8,
+      16,
+      104,
+      88
+    ]
+  },
+  "Scenery_19": {
+    "source": "res://assets/Scenery/Scenery_19.png",
+    "region": [
+      24,
+      16,
+      88,
+      88
+    ]
+  },
+  "Scenery_20": {
+    "source": "res://assets/Scenery/Scenery_20.png",
+    "region": [
+      32,
+      24,
+      64,
+      80
+    ]
+  },
+  "Scenery_21": {
+    "source": "res://assets/Scenery/Scenery_21.png",
+    "region": [
+      32,
+      8,
+      56,
+      96
+    ]
+  },
+  "Scenery_22": {
+    "source": "res://assets/Scenery/Scenery_22.png",
+    "region": [
+      40,
+      40,
+      48,
+      64
+    ]
+  },
+  "Scenery_23": {
+    "source": "res://assets/Scenery/Scenery_23.png",
+    "region": [
+      32,
+      24,
+      72,
+      88
+    ]
+  },
+  "Scenery_24": {
+    "source": "res://assets/Scenery/Scenery_24.png",
+    "region": [
+      24,
+      40,
+      80,
+      48
+    ]
+  },
+  "Scenery_25": {
+    "source": "res://assets/Scenery/Scenery_25.png",
+    "region": [
+      32,
+      32,
+      72,
+      64
+    ]
+  },
+  "Scenery_26": {
+    "source": "res://assets/Scenery/Scenery_26.png",
+    "region": [
+      24,
+      40,
+      80,
+      56
+    ]
+  },
+  "Scenery_27": {
+    "source": "res://assets/Scenery/Scenery_27.png",
+    "region": [
+      24,
+      32,
+      72,
+      64
+    ]
+  },
+  "Scenery_28": {
+    "source": "res://assets/Scenery/Scenery_28.png",
+    "region": [
+      24,
+      32,
+      80,
+      64
+    ]
+  },
+  "Scenery_29": {
+    "source": "res://assets/Scenery/Scenery_29.png",
+    "region": [
+      8,
+      32,
+      104,
+      96
+    ]
+  },
+  "Scenery_30": {
+    "source": "res://assets/Scenery/Scenery_30.png",
+    "region": [
+      32,
+      48,
+      56,
+      40
+    ]
+  },
+  "Scenery_31": {
+    "source": "res://assets/Scenery/Scenery_31.png",
+    "region": [
+      16,
+      32,
+      88,
+      64
+    ]
+  },
+  "Scenery_32": {
+    "source": "res://assets/Scenery/Scenery_32.png",
+    "region": [
+      16,
+      40,
+      88,
+      56
+    ]
+  },
+  "Scenery_33": {
+    "source": "res://assets/Scenery/Scenery_33.png",
+    "region": [
+      16,
+      32,
+      88,
+      64
+    ]
+  },
+  "Scenery_34": {
+    "source": "res://assets/Scenery/Scenery_34.png",
+    "region": [
+      24,
+      32,
+      88,
+      64
+    ]
+  },
+  "Scenery_35": {
+    "source": "res://assets/Scenery/Scenery_35.png",
+    "region": [
+      32,
+      0,
+      64,
+      80
+    ]
+  },
+  "Scenery_36": {
+    "source": "res://assets/Scenery/Scenery_36.png",
+    "region": [
+      8,
+      24,
+      104,
+      88
+    ]
+  },
+  "Scenery_37": {
+    "source": "res://assets/Scenery/Scenery_37.png",
+    "region": [
+      16,
+      8,
+      88,
+      112
+    ]
+  },
+  "Scenery_38": {
+    "source": "res://assets/Scenery/Scenery_38.png",
+    "region": [
+      40,
+      16,
+      40,
+      96
+    ]
+  },
+  "Scenery_39": {
+    "source": "res://assets/Scenery/Scenery_39.png",
+    "region": [
+      56,
+      32,
+      24,
+      80
+    ]
+  },
+  "Scenery_40": {
+    "source": "res://assets/Scenery/Scenery_40.png",
+    "region": [
+      64,
+      32,
+      64,
+      96
+    ]
+  },
+  "Scenery_41": {
+    "source": "res://assets/Scenery/Scenery_41.png",
+    "region": [
+      0,
+      32,
+      72,
+      96
+    ]
+  },
+  "Scenery_42": {
+    "source": "res://assets/Scenery/Scenery_42.png",
+    "region": [
+      56,
+      24,
+      8,
+      80
+    ]
+  },
+  "Scenery_43": {
+    "source": "res://assets/Scenery/Scenery_43.png",
+    "region": [
+      0,
+      48,
+      128,
+      40
+    ]
+  },
+  "Scenery_44": {
+    "source": "res://assets/Scenery/Scenery_44.png",
+    "region": [
+      0,
+      48,
+      128,
+      40
+    ]
+  },
+  "Scenery_45": {
+    "source": "res://assets/Scenery/Scenery_45.png",
+    "region": [
+      0,
+      48,
+      128,
+      40
+    ]
+  },
+  "Scenery_46": {
+    "source": "res://assets/Scenery/Scenery_46.png",
+    "region": [
+      64,
+      0,
+      64,
+      96
+    ]
+  },
+  "Scenery_47": {
+    "source": "res://assets/Scenery/Scenery_47.png",
+    "region": [
+      0,
+      0,
+      72,
+      96
+    ]
+  },
+  "Items_0": {
+    "source": "res://assets/Items/Items_0.png",
+    "region": [
+      40,
+      32,
+      48,
+      64
+    ]
+  },
+  "Items_1": {
+    "source": "res://assets/Items/Items_1.png",
+    "region": [
+      48,
+      40,
+      40,
+      56
+    ]
+  },
+  "Items_2": {
+    "source": "res://assets/Items/Items_2.png",
+    "region": [
+      40,
+      48,
+      48,
+      48
+    ]
+  },
+  "Items_3": {
+    "source": "res://assets/Items/Items_3.png",
+    "region": [
+      40,
+      40,
+      40,
+      56
+    ]
+  },
+  "Items_4": {
+    "source": "res://assets/Items/Items_4.png",
+    "region": [
+      40,
+      40,
+      48,
+      56
+    ]
+  },
+  "Items_5": {
+    "source": "res://assets/Items/Items_5.png",
+    "region": [
+      40,
+      32,
+      48,
+      64
+    ]
+  },
+  "Items_6": {
+    "source": "res://assets/Items/Items_6.png",
+    "region": [
+      40,
+      40,
+      40,
+      56
+    ]
+  },
+  "Items_7": {
+    "source": "res://assets/Items/Items_7.png",
+    "region": [
+      40,
+      48,
+      48,
+      48
+    ]
+  },
+  "Items_8": {
+    "source": "res://assets/Items/Items_8.png",
+    "region": [
+      40,
+      32,
+      48,
+      64
+    ]
+  },
+  "Items_9": {
+    "source": "res://assets/Items/Items_9.png",
+    "region": [
+      40,
+      32,
+      56,
+      64
+    ]
+  },
+  "Items_10": {
+    "source": "res://assets/Items/Items_10.png",
+    "region": [
+      40,
+      32,
+      56,
+      64
+    ]
+  },
+  "Items_11": {
+    "source": "res://assets/Items/Items_11.png",
+    "region": [
+      40,
+      8,
+      40,
+      104
+    ]
+  },
+  "Items_12": {
+    "source": "res://assets/Items/Items_12.png",
+    "region": [
+      48,
+      40,
+      32,
+      72
+    ]
+  },
+  "Items_13": {
+    "source": "res://assets/Items/Items_13.png",
+    "region": [
+      48,
+      8,
+      32,
+      112
+    ]
+  },
+  "Items_14": {
+    "source": "res://assets/Items/Items_14.png",
+    "region": [
+      48,
+      32,
+      40,
+      72
+    ]
+  },
+  "Items_15": {
+    "source": "res://assets/Items/Items_15.png",
+    "region": [
+      40,
+      16,
+      56,
+      88
+    ]
+  },
+  "Items_16": {
+    "source": "res://assets/Items/Items_16.png",
+    "region": [
+      48,
+      40,
+      32,
+      48
+    ]
+  },
+  "Items_17": {
+    "source": "res://assets/Items/Items_17.png",
+    "region": [
+      56,
+      40,
+      24,
+      56
+    ]
+  },
+  "Items_18": {
+    "source": "res://assets/Items/Items_18.png",
+    "region": [
+      48,
+      48,
+      24,
+      48
+    ]
+  },
+  "Items_19": {
+    "source": "res://assets/Items/Items_19.png",
+    "region": [
+      32,
+      24,
+      56,
+      80
+    ]
+  },
+  "Items_20": {
+    "source": "res://assets/Items/Items_20.png",
+    "region": [
+      56,
+      8,
+      8,
+      104
+    ]
+  },
+  "Items_21": {
+    "source": "res://assets/Items/Items_21.png",
+    "region": [
+      40,
+      32,
+      48,
+      72
+    ]
+  },
+  "Items_22": {
+    "source": "res://assets/Items/Items_22.png",
+    "region": [
+      48,
+      16,
+      40,
+      88
+    ]
+  },
+  "Items_23": {
+    "source": "res://assets/Items/Items_23.png",
+    "region": [
+      40,
+      24,
+      56,
+      80
+    ]
+  },
+  "Items_24": {
+    "source": "res://assets/Items/Items_24.png",
+    "region": [
+      48,
+      40,
+      24,
+      48
+    ]
+  },
+  "Items_25": {
+    "source": "res://assets/Items/Items_25.png",
+    "region": [
+      40,
+      32,
+      56,
+      56
+    ]
+  },
+  "Items_26": {
+    "source": "res://assets/Items/Items_26.png",
+    "region": [
+      48,
+      32,
+      24,
+      64
+    ]
+  },
+  "Items_27": {
+    "source": "res://assets/Items/Items_27.png",
+    "region": [
+      48,
+      24,
+      24,
+      72
+    ]
+  },
+  "Items_28": {
+    "source": "res://assets/Items/Items_28.png",
+    "region": [
+      48,
+      32,
+      24,
+      64
+    ]
+  },
+  "Items_29": {
+    "source": "res://assets/Items/Items_29.png",
+    "region": [
+      56,
+      24,
+      32,
+      80
+    ]
+  },
+  "Items_30": {
+    "source": "res://assets/Items/Items_30.png",
+    "region": [
+      48,
+      32,
+      32,
+      72
+    ]
+  },
+  "Items_31": {
+    "source": "res://assets/Items/Items_31.png",
+    "region": [
+      56,
+      16,
+      24,
+      88
+    ]
+  },
+  "Items_32": {
+    "source": "res://assets/Items/Items_32.png",
+    "region": [
+      48,
+      40,
+      24,
+      48
+    ]
+  },
+  "Items_33": {
+    "source": "res://assets/Items/Items_33.png",
+    "region": [
+      48,
+      48,
+      32,
+      40
+    ]
+  },
+  "Items_34": {
+    "source": "res://assets/Items/Items_34.png",
+    "region": [
+      48,
+      40,
+      24,
+      48
+    ]
+  },
+  "Items_35": {
+    "source": "res://assets/Items/Items_35.png",
+    "region": [
+      64,
+      48,
+      8,
+      40
+    ]
+  },
+  "Items_36": {
+    "source": "res://assets/Items/Items_36.png",
+    "region": [
+      40,
+      40,
+      40,
+      48
+    ]
+  },
+  "Items_37": {
+    "source": "res://assets/Items/Items_37.png",
+    "region": [
+      48,
+      40,
+      40,
+      48
+    ]
+  },
+  "Items_38": {
+    "source": "res://assets/Items/Items_38.png",
+    "region": [
+      48,
+      40,
+      40,
+      48
+    ]
+  },
+  "Items_39": {
+    "source": "res://assets/Items/Items_39.png",
+    "region": [
+      48,
+      40,
+      40,
+      48
+    ]
+  },
+  "Items_40": {
+    "source": "res://assets/Items/Items_40.png",
+    "region": [
+      40,
+      40,
+      40,
+      48
+    ]
+  },
+  "Items_41": {
+    "source": "res://assets/Items/Items_41.png",
+    "region": [
+      48,
+      40,
+      40,
+      40
+    ]
+  },
+  "Items_42": {
+    "source": "res://assets/Items/Items_42.png",
+    "region": [
+      56,
+      48,
+      32,
+      32
+    ]
+  },
+  "Items_43": {
+    "source": "res://assets/Items/Items_43.png",
+    "region": [
+      48,
+      40,
+      32,
+      40
+    ]
+  },
+  "Items_44": {
+    "source": "res://assets/Items/Items_44.png",
+    "region": [
+      48,
+      40,
+      32,
+      40
+    ]
+  },
+  "Items_45": {
+    "source": "res://assets/Items/Items_45.png",
+    "region": [
+      48,
+      40,
+      32,
+      40
+    ]
+  },
+  "Items_46": {
+    "source": "res://assets/Items/Items_46.png",
+    "region": [
+      48,
+      40,
+      32,
+      40
+    ]
+  },
+  "Items_47": {
+    "source": "res://assets/Items/Items_47.png",
+    "region": [
+      48,
+      40,
+      32,
+      40
+    ]
+  },
+  "Items_48": {
+    "source": "res://assets/Items/Items_48.png",
+    "region": [
+      40,
+      40,
+      40,
+      40
+    ]
+  },
+  "Items_49": {
+    "source": "res://assets/Items/Items_49.png",
+    "region": [
+      40,
+      32,
+      48,
+      48
+    ]
+  },
+  "Items_50": {
+    "source": "res://assets/Items/Items_50.png",
+    "region": [
+      40,
+      40,
+      48,
+      48
+    ]
+  },
+  "Items_51": {
+    "source": "res://assets/Items/Items_51.png",
+    "region": [
+      48,
+      40,
+      40,
+      40
+    ]
+  },
+  "Items_52": {
+    "source": "res://assets/Items/Items_52.png",
+    "region": [
+      40,
+      40,
+      48,
+      40
+    ]
+  },
+  "Items_53": {
+    "source": "res://assets/Items/Items_53.png",
+    "region": [
+      48,
+      40,
+      48,
+      40
+    ]
+  },
+  "Items_54": {
+    "source": "res://assets/Items/Items_54.png",
+    "region": [
+      32,
+      32,
+      64,
+      64
+    ]
+  },
+  "Items_55": {
+    "source": "res://assets/Items/Items_55.png",
+    "region": [
+      48,
+      40,
+      40,
+      56
+    ]
+  },
+  "Items_56": {
+    "source": "res://assets/Items/Items_56.png",
+    "region": [
+      8,
+      24,
+      112,
+      80
+    ]
+  },
+  "Items_57": {
+    "source": "res://assets/Items/Items_57.png",
+    "region": [
+      56,
+      56,
+      24,
+      40
+    ]
+  },
+  "Items_58": {
+    "source": "res://assets/Items/Items_58.png",
+    "region": [
+      56,
+      56,
+      24,
+      40
+    ]
+  },
+  "Items_59": {
+    "source": "res://assets/Items/Items_59.png",
+    "region": [
+      24,
+      40,
+      72,
+      56
+    ]
+  },
+  "Items_60": {
+    "source": "res://assets/Items/Items_60.png",
+    "region": [
+      48,
+      24,
+      40,
+      80
+    ]
+  },
+  "Items_61": {
+    "source": "res://assets/Items/Items_61.png",
+    "region": [
+      56,
+      24,
+      16,
+      72
+    ]
+  },
+  "Items_62": {
+    "source": "res://assets/Items/Items_62.png",
+    "region": [
+      32,
+      48,
+      72,
+      32
+    ]
+  },
+  "Items_63": {
+    "source": "res://assets/Items/Items_63.png",
+    "region": [
+      40,
+      32,
+      64,
+      56
+    ]
+  },
+  "Items_64": {
+    "source": "res://assets/Items/Items_64.png",
+    "region": [
+      16,
+      16,
+      88,
+      96
+    ]
+  },
+  "Items_65": {
+    "source": "res://assets/Items/Items_65.png",
+    "region": [
+      32,
+      48,
+      64,
+      40
+    ]
+  },
+  "Items_66": {
+    "source": "res://assets/Items/Items_66.png",
+    "region": [
+      56,
+      40,
+      72,
+      40
+    ]
+  },
+  "Items_67": {
+    "source": "res://assets/Items/Items_67.png",
+    "region": [
+      0,
+      64,
+      72,
+      8
+    ]
+  },
+  "Items_68": {
+    "source": "res://assets/Items/Items_68.png",
+    "region": [
+      64,
+      16,
+      16,
+      88
+    ]
+  },
+  "Items_69": {
+    "source": "res://assets/Items/Items_69.png",
+    "region": [
+      32,
+      40,
+      64,
+      56
+    ]
+  },
+  "Items_70": {
+    "source": "res://assets/Items/Items_70.png",
+    "region": [
+      40,
+      64,
+      56,
+      16
+    ]
+  },
+  "Items_71": {
+    "source": "res://assets/Items/Items_71.png",
+    "region": [
+      48,
+      32,
+      48,
+      72
+    ]
+  },
+  "Tiles_0": {
+    "source": "res://assets/Tiles/Tiles_0.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_1": {
+    "source": "res://assets/Tiles/Tiles_1.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_2": {
+    "source": "res://assets/Tiles/Tiles_2.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_3": {
+    "source": "res://assets/Tiles/Tiles_3.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_4": {
+    "source": "res://assets/Tiles/Tiles_4.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_5": {
+    "source": "res://assets/Tiles/Tiles_5.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_7": {
+    "source": "res://assets/Tiles/Tiles_7.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_8": {
+    "source": "res://assets/Tiles/Tiles_8.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_9": {
+    "source": "res://assets/Tiles/Tiles_9.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_10": {
+    "source": "res://assets/Tiles/Tiles_10.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_11": {
+    "source": "res://assets/Tiles/Tiles_11.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_12": {
+    "source": "res://assets/Tiles/Tiles_12.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_13": {
+    "source": "res://assets/Tiles/Tiles_13.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_14": {
+    "source": "res://assets/Tiles/Tiles_14.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_15": {
+    "source": "res://assets/Tiles/Tiles_15.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_16": {
+    "source": "res://assets/Tiles/Tiles_16.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_17": {
+    "source": "res://assets/Tiles/Tiles_17.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_19": {
+    "source": "res://assets/Tiles/Tiles_19.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_20": {
+    "source": "res://assets/Tiles/Tiles_20.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_21": {
+    "source": "res://assets/Tiles/Tiles_21.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_22": {
+    "source": "res://assets/Tiles/Tiles_22.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_23": {
+    "source": "res://assets/Tiles/Tiles_23.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_24": {
+    "source": "res://assets/Tiles/Tiles_24.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_25": {
+    "source": "res://assets/Tiles/Tiles_25.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_26": {
+    "source": "res://assets/Tiles/Tiles_26.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_27": {
+    "source": "res://assets/Tiles/Tiles_27.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_28": {
+    "source": "res://assets/Tiles/Tiles_28.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_29": {
+    "source": "res://assets/Tiles/Tiles_29.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_31": {
+    "source": "res://assets/Tiles/Tiles_31.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_32": {
+    "source": "res://assets/Tiles/Tiles_32.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_33": {
+    "source": "res://assets/Tiles/Tiles_33.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_34": {
+    "source": "res://assets/Tiles/Tiles_34.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_35": {
+    "source": "res://assets/Tiles/Tiles_35.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_36": {
+    "source": "res://assets/Tiles/Tiles_36.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_37": {
+    "source": "res://assets/Tiles/Tiles_37.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_38": {
+    "source": "res://assets/Tiles/Tiles_38.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_39": {
+    "source": "res://assets/Tiles/Tiles_39.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_40": {
+    "source": "res://assets/Tiles/Tiles_40.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_41": {
+    "source": "res://assets/Tiles/Tiles_41.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_43": {
+    "source": "res://assets/Tiles/Tiles_43.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_44": {
+    "source": "res://assets/Tiles/Tiles_44.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_45": {
+    "source": "res://assets/Tiles/Tiles_45.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_46": {
+    "source": "res://assets/Tiles/Tiles_46.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_47": {
+    "source": "res://assets/Tiles/Tiles_47.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_48": {
+    "source": "res://assets/Tiles/Tiles_48.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_49": {
+    "source": "res://assets/Tiles/Tiles_49.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_50": {
+    "source": "res://assets/Tiles/Tiles_50.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_51": {
+    "source": "res://assets/Tiles/Tiles_51.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_52": {
+    "source": "res://assets/Tiles/Tiles_52.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_53": {
+    "source": "res://assets/Tiles/Tiles_53.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_55": {
+    "source": "res://assets/Tiles/Tiles_55.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_56": {
+    "source": "res://assets/Tiles/Tiles_56.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_57": {
+    "source": "res://assets/Tiles/Tiles_57.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_58": {
+    "source": "res://assets/Tiles/Tiles_58.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_59": {
+    "source": "res://assets/Tiles/Tiles_59.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_60": {
+    "source": "res://assets/Tiles/Tiles_60.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_61": {
+    "source": "res://assets/Tiles/Tiles_61.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_62": {
+    "source": "res://assets/Tiles/Tiles_62.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_63": {
+    "source": "res://assets/Tiles/Tiles_63.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_64": {
+    "source": "res://assets/Tiles/Tiles_64.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_65": {
+    "source": "res://assets/Tiles/Tiles_65.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_67": {
+    "source": "res://assets/Tiles/Tiles_67.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_68": {
+    "source": "res://assets/Tiles/Tiles_68.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_69": {
+    "source": "res://assets/Tiles/Tiles_69.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_70": {
+    "source": "res://assets/Tiles/Tiles_70.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_71": {
+    "source": "res://assets/Tiles/Tiles_71.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_72": {
+    "source": "res://assets/Tiles/Tiles_72.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_73": {
+    "source": "res://assets/Tiles/Tiles_73.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_74": {
+    "source": "res://assets/Tiles/Tiles_74.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_75": {
+    "source": "res://assets/Tiles/Tiles_75.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_76": {
+    "source": "res://assets/Tiles/Tiles_76.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_77": {
+    "source": "res://assets/Tiles/Tiles_77.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_79": {
+    "source": "res://assets/Tiles/Tiles_79.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_80": {
+    "source": "res://assets/Tiles/Tiles_80.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_81": {
+    "source": "res://assets/Tiles/Tiles_81.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_82": {
+    "source": "res://assets/Tiles/Tiles_82.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_83": {
+    "source": "res://assets/Tiles/Tiles_83.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_84": {
+    "source": "res://assets/Tiles/Tiles_84.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_85": {
+    "source": "res://assets/Tiles/Tiles_85.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_86": {
+    "source": "res://assets/Tiles/Tiles_86.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_87": {
+    "source": "res://assets/Tiles/Tiles_87.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_88": {
+    "source": "res://assets/Tiles/Tiles_88.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_89": {
+    "source": "res://assets/Tiles/Tiles_89.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_91": {
+    "source": "res://assets/Tiles/Tiles_91.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_92": {
+    "source": "res://assets/Tiles/Tiles_92.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_93": {
+    "source": "res://assets/Tiles/Tiles_93.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_94": {
+    "source": "res://assets/Tiles/Tiles_94.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_95": {
+    "source": "res://assets/Tiles/Tiles_95.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_103": {
+    "source": "res://assets/Tiles/Tiles_103.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_104": {
+    "source": "res://assets/Tiles/Tiles_104.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_105": {
+    "source": "res://assets/Tiles/Tiles_105.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_106": {
+    "source": "res://assets/Tiles/Tiles_106.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  },
+  "Tiles_107": {
+    "source": "res://assets/Tiles/Tiles_107.png",
+    "region": [
+      0,
+      0,
+      128,
+      128
+    ]
+  }
+}

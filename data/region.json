@@ -1,0 +1,44 @@
+{
+  "floors": 12,
+  "weights": {
+    "battle": 30,
+    "elite": 8,
+    "recruit": 8,
+    "spring": 10,
+    "treasure": 10,
+    "event": 14,
+    "shop": 8,
+    "rest": 8,
+    "mystery": 9
+  },
+  "minimum_elite_floor": 5,
+  "maximum_mysteries": 2,
+  "guaranteed": {
+    "1": [
+      "battle"
+    ],
+    "2": [
+      "recruit"
+    ],
+    "4": [
+      "spring",
+      "rest"
+    ],
+    "6": [
+      "recruit",
+      "shop"
+    ],
+    "8": [
+      "recruit",
+      "treasure"
+    ],
+    "10": [
+      "recruit",
+      "elite"
+    ],
+    "11": [
+      "rest",
+      "spring"
+    ]
+  }
+}

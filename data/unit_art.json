@@ -1,0 +1,199 @@
+{
+  "Expedition_Warrior": {
+    "source": "res://assets/Tiny Swords (Free Pack)/Units/Blue Units/Warrior/Warrior_Idle.png",
+    "region": [
+      59,
+      48,
+      84,
+      89
+    ],
+    "frames": 8,
+    "stride": 192,
+    "clips": {
+      "run": {"source": "res://assets/Tiny Swords (Free Pack)/Units/Blue Units/Warrior/Warrior_Run.png", "region": [53, 46, 93, 91], "frames": 6},
+      "attack": {"source": "res://assets/Tiny Swords (Free Pack)/Units/Blue Units/Warrior/Warrior_Attack1.png", "region": [43, 44, 120, 112], "frames": 4, "release": 2},
+      "attack_alt": {"source": "res://assets/Tiny Swords (Free Pack)/Units/Blue Units/Warrior/Warrior_Attack2.png", "region": [41, 48, 118, 104], "frames": 4, "release": 2},
+      "guard": {"source": "res://assets/Tiny Swords (Free Pack)/Units/Blue Units/Warrior/Warrior_Guard.png", "region": [57, 44, 70, 93], "frames": 6, "release": 2}
+    }
+  },
+  "Expedition_Knight": {
+    "source": "res://assets/Tiny Swords (Free Pack)/Units/Black Units/Lancer/Lancer_Idle.png",
+    "region": [
+      114,
+      48,
+      70,
+      150
+    ],
+    "portrait_region": [
+      128,
+      119,
+      56,
+      79
+    ],
+    "frames": 12,
+    "stride": 320,
+    "clips": {
+      "run": {"source": "res://assets/Tiny Swords (Free Pack)/Units/Black Units/Lancer/Lancer_Run.png", "region": [110, 54, 72, 149], "frames": 6},
+      "attack": {"source": "res://assets/Tiny Swords (Free Pack)/Units/Black Units/Lancer/Lancer_Right_Attack.png", "region": [121, 123, 186, 75], "frames": 3, "release": 1, "offset": [-23, 0]},
+      "guard": {"source": "res://assets/Tiny Swords (Free Pack)/Units/Black Units/Lancer/Lancer_Right_Defence.png", "region": [122, 123, 153, 75], "frames": 6, "release": 1, "offset": [-23, 0]}
+    }
+  },
+  "Expedition_Mage": {
+    "source": "res://assets/Chars/igor-storm-mage.png",
+    "region": [28, 64, 329, 238],
+    "portrait_region": [93, 70, 210, 232],
+    "display_width": 164,
+    "frames": 4,
+    "columns": 4,
+    "stride": 384,
+    "row_offsets": [0, 333, 681],
+    "clips": {
+      "attack": {"start": 4, "frames": 4},
+      "hurt": {"start": 8, "frames": 2},
+      "defeat": {"start": 10, "frames": 2}
+    }
+  },
+  "Expedition_Cleric": {
+    "source": "res://assets/Tiny Swords (Free Pack)/Units/Blue Units/Monk/Idle.png",
+    "region": [
+      67,
+      65,
+      58,
+      69
+    ],
+    "frames": 6,
+    "stride": 192,
+    "clips": {
+      "run": {"source": "res://assets/Tiny Swords (Free Pack)/Units/Blue Units/Monk/Run.png", "region": [55, 63, 83, 71], "frames": 4},
+      "attack": {"source": "res://assets/Tiny Swords (Free Pack)/Units/Blue Units/Monk/Heal.png", "region": [35, 63, 121, 71], "frames": 11, "release": 4}
+    }
+  },
+  "Expedition_Ranger": {
+    "source": "res://assets/Tiny Swords (Free Pack)/Units/Yellow Units/Archer/Archer_Idle.png",
+    "palette": "forest",
+    "region": [
+      56,
+      47,
+      72,
+      89
+    ],
+    "frames": 6,
+    "stride": 192,
+    "clips": {
+      "run": {"source": "res://assets/Tiny Swords (Free Pack)/Units/Yellow Units/Archer/Archer_Run.png", "region": [57, 46, 73, 90], "frames": 4},
+      "attack": {"source": "res://assets/Tiny Swords (Free Pack)/Units/Yellow Units/Archer/Archer_Shoot.png", "region": [53, 46, 87, 90], "frames": 8, "release": 5}
+    }
+  },
+  "Expedition_Rogue": {
+    "source": "res://assets/Tiny Swords (Free Pack)/Units/Red Units/Pawn/Pawn_Idle Knife.png",
+    "region": [
+      67,
+      61,
+      68,
+      74
+    ],
+    "frames": 8,
+    "stride": 192,
+    "clips": {
+      "run": {"source": "res://assets/Tiny Swords (Free Pack)/Units/Red Units/Pawn/Pawn_Run Knife.png", "region": [65, 58, 77, 77], "frames": 6},
+      "attack": {"source": "res://assets/Tiny Swords (Free Pack)/Units/Red Units/Pawn/Pawn_Interact Knife.png", "region": [61, 60, 80, 81], "frames": 4, "release": 1}
+    }
+  },
+  "Tide_Guard": {
+    "source": "res://assets/Tiny Swords (Free Pack)/Units/Black Units/Warrior/Warrior_Guard.png",
+    "region": [
+      57,
+      44,
+      70,
+      93
+    ],
+    "frames": 6,
+    "stride": 192,
+    "clips": {
+      "run": {"source": "res://assets/Tiny Swords (Free Pack)/Units/Black Units/Warrior/Warrior_Run.png", "region": [53, 46, 93, 91], "frames": 6},
+      "attack": {"source": "res://assets/Tiny Swords (Free Pack)/Units/Black Units/Warrior/Warrior_Attack1.png", "region": [43, 44, 120, 112], "frames": 4, "release": 2},
+      "attack_alt": {"source": "res://assets/Tiny Swords (Free Pack)/Units/Black Units/Warrior/Warrior_Attack2.png", "region": [41, 48, 118, 104], "frames": 4, "release": 2},
+      "guard": {"source": "res://assets/Tiny Swords (Free Pack)/Units/Black Units/Warrior/Warrior_Guard.png", "region": [57, 44, 70, 93], "frames": 6, "release": 2}
+    }
+  },
+  "Tide_Acolyte": {
+    "source": "res://assets/Tiny Swords (Free Pack)/Units/Red Units/Monk/Idle.png",
+    "region": [
+      67,
+      65,
+      58,
+      69
+    ],
+    "frames": 6,
+    "stride": 192,
+    "clips": {
+      "run": {"source": "res://assets/Tiny Swords (Free Pack)/Units/Red Units/Monk/Run.png", "region": [55, 63, 83, 71], "frames": 4},
+      "attack": {"source": "res://assets/Tiny Swords (Free Pack)/Units/Red Units/Monk/Heal.png", "region": [35, 63, 121, 71], "frames": 11, "release": 4}
+    }
+  },
+  "Tide_Sentinel": {
+    "source": "res://assets/Enemies/tide-monsters.png",
+    "region": [
+      53,
+      81,
+      420,
+      353
+    ],
+    "faces_left": true
+  },
+  "Tide_Bat": {
+    "source": "res://assets/Enemies/tide-monsters.png",
+    "region": [
+      499,
+      107,
+      533,
+      274
+    ],
+    "faces_left": true
+  },
+  "Tide_Viper": {
+    "source": "res://assets/Enemies/tide-monsters.png",
+    "region": [
+      1110,
+      72,
+      355,
+      367
+    ],
+    "faces_left": true
+  },
+  "Tide_Wraith": {
+    "source": "res://assets/Enemies/tide-monsters.png",
+    "region": [
+      67,
+      527,
+      384,
+      445
+    ],
+    "faces_left": true
+  },
+  "Tide_Idol": {
+    "source": "res://assets/Enemies/tide-monsters.png",
+    "region": [
+      492,
+      529,
+      509,
+      420
+    ],
+    "faces_left": true
+  },
+  "Tide_Priest": {
+    "source": "res://assets/Enemies/tide-monsters.png",
+    "region": [
+      1039,
+      516,
+      456,
+      467
+    ],
+    "faces_left": true
+  },
+  "Combat_Arrow": {"source": "res://assets/Tiny Swords (Free Pack)/Units/Yellow Units/Archer/Arrow.png", "region": [10, 26, 43, 12], "frames": 1, "stride": 0},
+  "Combat_Dust": {"source": "res://assets/Tiny Swords (Free Pack)/Particle FX/Dust_01.png", "region": [13, 12, 38, 35], "frames": 8, "stride": 64},
+  "Combat_Burst": {"source": "res://assets/Tiny Swords (Free Pack)/Particle FX/Explosion_01.png", "region": [63, 60, 65, 64], "frames": 8, "stride": 192},
+  "Combat_Heal_Blue": {"source": "res://assets/Tiny Swords (Free Pack)/Units/Blue Units/Monk/Heal_Effect.png", "region": [47, 18, 98, 128], "frames": 11, "stride": 192},
+  "Combat_Heal_Red": {"source": "res://assets/Tiny Swords (Free Pack)/Units/Red Units/Monk/Heal_Effect.png", "region": [47, 18, 98, 128], "frames": 11, "stride": 192}
+}

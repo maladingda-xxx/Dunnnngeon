@@ -1,0 +1,91 @@
+{
+  "sentinel": {
+    "name": "灰骨哨兵",
+    "role": "突击",
+    "sprite": "Tide_Sentinel",
+    "hp": 19,
+    "attack": 6,
+    "defense": 1,
+    "speed": 8,
+    "ai": "attack",
+    "growth": 2
+  },
+  "bat": {
+    "name": "回声蝠",
+    "role": "突击",
+    "sprite": "Tide_Bat",
+    "hp": 14,
+    "attack": 5,
+    "defense": 0,
+    "speed": 12,
+    "ai": "attack",
+    "growth": 2,
+    "dodge": 0.1
+  },
+  "viper": {
+    "name": "深穴蝰",
+    "role": "突击",
+    "sprite": "Tide_Viper",
+    "hp": 19,
+    "attack": 6,
+    "defense": 1,
+    "speed": 11,
+    "ai": "poison",
+    "growth": 2
+  },
+  "guard": {
+    "name": "玄铁守卫",
+    "role": "守护",
+    "sprite": "Tide_Guard",
+    "hp": 24,
+    "attack": 6,
+    "defense": 3,
+    "speed": 7,
+    "ai": "guard",
+    "growth": 3
+  },
+  "acolyte": {
+    "name": "灯骸祭师",
+    "role": "辅助",
+    "sprite": "Tide_Acolyte",
+    "hp": 18,
+    "attack": 5,
+    "defense": 1,
+    "speed": 9,
+    "ai": "support",
+    "growth": 2
+  },
+  "wraith": {
+    "name": "潮魂",
+    "role": "精英突击",
+    "sprite": "Tide_Wraith",
+    "hp": 41,
+    "attack": 8,
+    "defense": 2,
+    "speed": 10,
+    "ai": "poison",
+    "growth": 3
+  },
+  "idol": {
+    "name": "断誓巨像",
+    "role": "精英守护",
+    "sprite": "Tide_Idol",
+    "hp": 46,
+    "attack": 8,
+    "defense": 4,
+    "speed": 6,
+    "ai": "guard",
+    "growth": 3
+  },
+  "priest": {
+    "name": "无灯司祭",
+    "role": "首领",
+    "sprite": "Tide_Priest",
+    "hp": 91,
+    "attack": 10,
+    "defense": 3,
+    "speed": 9,
+    "ai": "boss",
+    "growth": 3
+  }
+}

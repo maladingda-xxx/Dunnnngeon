@@ -1,0 +1,154 @@
+{
+  "strike": {
+    "name": "斩击",
+    "icon": "Items_11",
+    "mode": "enemy",
+    "power": 1,
+    "desc": "对一个敌人造成物理伤害。"
+  },
+  "cleave": {
+    "name": "裂潮",
+    "icon": "Items_23",
+    "mode": "enemies",
+    "animation": "attack_alt",
+    "power": 1.03,
+    "cd": 2,
+    "desc": "横扫所有敌人。冷却 2 回合。"
+  },
+  "brace": {
+    "name": "坚阵",
+    "icon": "Items_51",
+    "mode": "self",
+    "effect": "shield",
+    "amount": 17,
+    "duration": 2,
+    "self_effect": "buff",
+    "self_amount": 4,
+    "cd": 2,
+    "desc": "获得 17 点护盾与 4 点攻击强化，持续 2 回合。"
+  },
+  "ward": {
+    "name": "守灯",
+    "icon": "Items_53",
+    "mode": "ally",
+    "effect": "shield",
+    "amount": 19,
+    "duration": 2,
+    "cd": 2,
+    "desc": "为一名队友附加 19 点护盾，持续 2 回合。"
+  },
+  "riposte": {
+    "name": "誓刃",
+    "icon": "Items_68",
+    "mode": "enemy",
+    "power": 1.55,
+    "self_effect": "shield",
+    "self_amount": 10,
+    "cd": 2,
+    "desc": "重击敌人，自身获得 10 点护盾。"
+  },
+  "bolt": {
+    "name": "灵火",
+    "icon": "Items_14",
+    "mode": "enemy",
+    "motion": "magic",
+    "power": 1.04,
+    "desc": "对一个敌人释放灵火。"
+  },
+  "nova": {
+    "name": "星盐爆",
+    "icon": "Items_37",
+    "mode": "enemies",
+    "motion": "magic",
+    "power": 1.08,
+    "effect": "weaken",
+    "amount": 2,
+    "duration": 2,
+    "cd": 2,
+    "desc": "伤害所有敌人并降低其防御。"
+  },
+  "arc": {
+    "name": "雷印",
+    "icon": "Items_52",
+    "mode": "enemy",
+    "motion": "magic",
+    "power": 1.5,
+    "effect": "stun",
+    "amount": 1,
+    "duration": 1,
+    "cd": 3,
+    "desc": "重创并眩晕一个敌人。"
+  },
+  "mend": {
+    "name": "缝光",
+    "icon": "Items_4",
+    "mode": "ally",
+    "heal": 16,
+    "effect": "regen",
+    "amount": 4,
+    "duration": 2,
+    "cd": 2,
+    "desc": "治疗 16 点生命，并附加持续治疗。"
+  },
+  "cleanse": {
+    "name": "净潮",
+    "icon": "Items_14",
+    "mode": "allies",
+    "heal": 6,
+    "cleanse": true,
+    "cd": 3,
+    "desc": "治疗全队 6 点，移除中毒、流血、破防和眩晕，降低 12 压力。"
+  },
+  "arrow": {
+    "name": "寻隙射击",
+    "icon": "Items_71",
+    "mode": "enemy",
+    "motion": "arrow",
+    "power": 1.03,
+    "desc": "射击一名敌人。"
+  },
+  "mark": {
+    "name": "猎标",
+    "icon": "Items_12",
+    "mode": "enemy",
+    "motion": "arrow",
+    "power": 1.05,
+    "effect": "weaken",
+    "amount": 4,
+    "duration": 3,
+    "cd": 2,
+    "desc": "命中时降低目标 4 点防御，持续 3 回合。"
+  },
+  "volley": {
+    "name": "裂风箭",
+    "icon": "Items_71",
+    "mode": "enemies",
+    "motion": "arrow",
+    "power": 1.11,
+    "cd": 2,
+    "desc": "射击所有敌人。"
+  },
+  "bleed": {
+    "name": "裁脉",
+    "icon": "Items_18",
+    "mode": "enemy",
+    "power": 1.1,
+    "effect": "bleed",
+    "amount": 5,
+    "duration": 2,
+    "cd": 2,
+    "desc": "割裂目标，造成持续流血。"
+  },
+  "toxin": {
+    "name": "盐毒刃",
+    "icon": "Items_36",
+    "mode": "enemy",
+    "power": 1.06,
+    "effect": "poison",
+    "amount": 5,
+    "duration": 3,
+    "cd": 3,
+    "desc": "使目标中毒，持续 3 回合。"
+  }
+}
+
